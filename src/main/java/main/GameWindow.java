@@ -4,16 +4,19 @@ import javax.swing.*;
 
 public class GameWindow {
 
-    private JFrame jFrame;
+    private JFrame jframe;
 
     public GameWindow(GamePanel gamePanel) {
-        jFrame = new JFrame();
 
-        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jFrame.add(gamePanel);
-        jFrame.setLocationRelativeTo(null);
-        jFrame.setResizable(false);
-        jFrame.pack();
-        jFrame.setVisible(true);
+        jframe = new JFrame();
+
+        jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jframe.add(gamePanel);
+        jframe.setLocationRelativeTo(null);
+        jframe.setResizable(false);
+        jframe.pack();
+        jframe.setVisible(true);
+
     }
+
 }
