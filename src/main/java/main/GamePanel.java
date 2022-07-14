@@ -93,16 +93,16 @@ public class GamePanel extends JPanel {
         if (moving) {
             switch (playerDir) {
                 case LEFT:
-                    xDelta -= 5;
+                    xDelta -= 3;
                     break;
                 case UP:
-                    yDelta -= 5;
+                    yDelta -= 3;
                     break;
                 case RIGHT:
-                    xDelta += 5;
+                    xDelta += 3;
                     break;
                 case DOWN:
-                    yDelta += 5;
+                    yDelta += 3;
                     break;
             }
         }
@@ -115,6 +115,7 @@ public class GamePanel extends JPanel {
         setAnimation();
         updatePos();
 
-        g.drawImage(animations[playerAction][aniIndex], (int) xDelta, (int) yDelta, 256, 160, null);
+        g.drawImage(animations[playerAction][aniIndex],
+                (int) xDelta, (int) yDelta, 256, 160, null);
     }
 }
